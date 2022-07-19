@@ -1,1 +1,2 @@
-channel"
+1);
+console.log(arrc2);
