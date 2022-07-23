@@ -1,0 +1,34 @@
+.inputText {
+  color: rgb(89, 89, 89);
+  margin-left: 0px;
+  margin-top: 50px;
+  width: 500px;
+  height: 50px;
+  font-weight: bold;
+  font-size: large;
+  /* border: none; */
+}
+
+input:focus {
+  /* outline: none !important; */
+}
+
+.submitButton {
+  height: 50px;
+  background-color: red;
+  border: 2px black solid;
+  font-size: larger;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  border-radius: 40px;
+  font-style: oblique;
+  font-weight: bolder;
+  color: white;
+  padding: 7px 20px;
+  padding-bottom: 20px;
+}
+
+.submitButton:hover {
+  cursor: pointer;
+  background-color: green;
+}

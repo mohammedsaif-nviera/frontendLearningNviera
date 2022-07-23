@@ -1,0 +1,61 @@
+.flexContainer {
+  margin: 10px 0px;
+  background-color: white;
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: flex-start;
+  /* flex-wrap: wrap; */
+}
+
+.item {
+  background-color: white;
+  margin: 10px;
+}
+
+.flexItem1 {
+  width: 3%;
+  /* padding: 1% 0; */
+}
+
+.flexItem2 {
+  background-color: white;
+  flex-grow: 4;
+}
+
+.checkbox1 {
+  margin: 50% 50%;
+  background-color: white;
+  text-align: center;
+  cursor: pointer;
+}
+.heading {
+  background-color: white;
+  font-weight: bold;
+  padding: 0%;
+  margin: 0%;
+  margin-bottom: 0.5%;
+  display: inline;
+}
+
+.description {
+  background-color: white;
+  padding: 0%;
+  margin: 0%;
+}
+
+.modifying {
+  display: inline;
+  margin-left: 90%;
+}
+
+.editButton,
+.deleteButton {
+  display: inline;
+
+  margin-right: 0.5%;
+  cursor: pointer;
+}
