@@ -50,12 +50,19 @@
 .modifying {
   display: inline;
   margin-left: 90%;
+  background-color: white;
 }
 
 .editButton,
 .deleteButton {
   display: inline;
-
+  background-color: white;
   margin-right: 0.5%;
   cursor: pointer;
+  background-color: rgb(255, 255, 255);
+}
+
+button {
+  border: none;
+  background-color: white;
 }

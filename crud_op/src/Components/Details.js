@@ -68,35 +68,36 @@ const Details = () => {
       });
   };
 
-  const rows = data
-    ? data.map((row) =>
-        createData(
-          row._id,
-          row.name,
-          row.age,
-          row.ph,
-          row.address,
-          <>
-            <IconButton
-              aria-label="edit"
-              onClick={() =>
-                navigate(`/editPage/${row._id}`, {
-                  state: [row.name, row.age, row.ph, row.address],
-                })
-              }
-            >
-              <ModeEditIcon color="success" />
-            </IconButton>
-            <IconButton
-              aria-label="delete"
-              onClick={() => handleClickOpen(row._id)}
-            >
-              <DeleteIcon color="error" />
-            </IconButton>
-          </>
+  const rows =
+    data.length > 0
+      ? data.map((row) =>
+          createData(
+            row._id,
+            row.name,
+            row.age,
+            row.ph,
+            row.address,
+            <>
+              <IconButton
+                aria-label="edit"
+                onClick={() =>
+                  navigate(`/editPage/${row._id}`, {
+                    state: [row.name, row.age, row.ph, row.address],
+                  })
+                }
+              >
+                <ModeEditIcon color="success" />
+              </IconButton>
+              <IconButton
+                aria-label="delete"
+                onClick={() => handleClickOpen(row._id)}
+              >
+                <DeleteIcon color="error" />
+              </IconButton>
+            </>
+          )
         )
-      )
-    : "";
+      : "";
 
   const [locationMessage, setLocationMessage] = useState({
     msg: "",

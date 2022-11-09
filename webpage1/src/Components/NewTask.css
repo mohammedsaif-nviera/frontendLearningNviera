@@ -14,14 +14,15 @@ input:focus {
 }
 
 .submitButton {
+  margin-left: 4%;
   height: 50px;
   background-color: red;
-  border: 2px black solid;
+  border: 2px rgb(0, 0, 0) solid;
   font-size: larger;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  border-radius: 40px;
-  font-style: oblique;
+  border-radius: 4px;
+  /* font-style: oblique; */
   font-weight: bolder;
   color: white;
   padding: 7px 20px;
@@ -30,5 +31,5 @@ input:focus {
 
 .submitButton:hover {
   cursor: pointer;
-  background-color: green;
+  background-color: rgb(203, 10, 10);
 }
